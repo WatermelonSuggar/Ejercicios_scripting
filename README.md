@@ -124,3 +124,38 @@ namespace ejercicio18
 }
 
 ```
+
+**PREGUNTAS TEÓRICAS**
+> ¿De qué tipo es el resultado al sumar 12 bytes, 3 ints, 6 floats y 3 doubles?
+
+* Cuando se suman diferentes tipos de datos, C# convierte los valores al tipo de mayor precisión, que en este caso es double.
+
+> ¿Cuál es la diferencia entre la longitud de un array y la de una cadena?
+
+* Array: Su longitud se obtiene con .Length, que devuelve el número total de elementos.
+* Cadena (string): Su longitud se obtiene con .Length, que devuelve el número de caracteres en la cadena.
+
+```C#
+int[] numeros = {1, 2, 3, 4};
+Console.WriteLine(numeros.Length); // 4
+
+string texto = "Wendy";
+Console.WriteLine(texto.Length); // 5
+```
+
+> Usando un ciclo do-while imprima los número impares desde 10000 hasta -10000
+
+```c#
+static void Main()
+{
+    int NumInicial = 9999;
+    do
+    {
+        Console.WriteLine(NumInicial);
+        NumInicial--;
+    }
+    while (NumInicial > -10000);
+}
+```
+
+
