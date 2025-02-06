@@ -17,7 +17,7 @@ namespace Taller_1
             {
                 Console.WriteLine("La cadena contiene caracteres diferentes a números");
             }
-            else if (cadena.All(char.IsDigit))
+            else 
             {
                 int[] numbers = cadena.Select(numero => numero - '0').ToArray(); //Le resta al número el valor ASCII de 0 para obtener el valor real.
                 for (int i = 0; i < numbers.Length; i++)
